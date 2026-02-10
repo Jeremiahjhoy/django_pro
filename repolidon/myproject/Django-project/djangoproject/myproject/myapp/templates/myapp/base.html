@@ -50,12 +50,10 @@
 
     <!-- Navbar -->
     <div class="navbar">
-        <!-- Left side: Todolist -->
-        <div class="left">
-            <a href="{% url 'todolist' %}" class="{% if request.path == '/todolist/' %}active{% endif %}">📋 Todolist</a>
-        </div>
 
-        <!-- Right side: Home, About, Contact -->
+        
+
+        <!-- left side: Home, About, Contact -->
         <div class="right">
             <a href="{% url 'homepage' %}" class="{% if request.path == '/' %}active{% endif %}">🏠 Home</a>
             <a href="{% url 'about' %}" class="{% if request.path == '/about/' %}active{% endif %}">ℹ️ About</a>

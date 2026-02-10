@@ -3,7 +3,44 @@
 {% block title %}About{% endblock %}
 
 {% block content %}
-<h1>About Us</h1>
-<p>Welcome to the About page! This is where you can tell visitors about your website or yourself.</p>
+<div class="about-card">
+    <h2>About Us</h2>
+    <p>We build creative solutions that make life easier.</p>
+</div>
+
+<style>
+body {
+    background: linear-gradient(135deg, #e0f7fa, #e0e7ff);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Card style */
+.about-card {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 35px 25px;
+    background: linear-gradient(145deg, #ffffff, #f1f5f9);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.15);
+}
+
+.about-card h2 {
+    font-size: 26px;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.5;
+}
+</style>
 {% endblock %}
-        

@@ -13,9 +13,6 @@ def homepage(request):
 
     return render(request, "myapp/homepage.html", context)
 
-def todolist(request):
-    return render(request, "myapp/todolist.html")
-
 def about(request):
     return render(request, "myapp/about.html")
 
